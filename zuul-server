@@ -12,4 +12,4 @@ zuul:
       url: http://localhost:8091
     google:
       path: /google/**
-      url: https://www.google.com/  
+      url: https://www.google.com/
