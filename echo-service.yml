@@ -1,2 +1,18 @@
 server:
   port: 8091
+  
+spring:
+  cloud:
+    stream:
+      bindings:
+        itemsChannel:
+          binder: rabbit
+          destination: item.exchange
+          group: myqueue
+          contentType: application/json
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: admin
+    virtual-host: /
+    port: 5672  
